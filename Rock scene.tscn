@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://fh00pphqcmnl"]
+
+[ext_resource type="Texture2D" uid="uid://dbfjd00b3c28j" path="res://Rock.png" id="1_q3xyf"]
+
+[node name="Node2D" type="Node2D" unique_id=1751798082]
+
+[node name="Rock" type="Sprite2D" parent="." unique_id=234319611]
+position = Vector2(377, 349)
+scale = Vector2(0.25439557, 0.25439557)
+texture = ExtResource("1_q3xyf")
+
+[node name="Rock" type="Sprite2D" parent="Rock" unique_id=1116476099]
+modulate = Color(0.49084002, 0.46440768, 0.4453246, 1)
+position = Vector2(911.9655, 377.3651)
+scale = Vector2(0.64617836, 0.64617836)
+texture = ExtResource("1_q3xyf")
