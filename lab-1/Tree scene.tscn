@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://0pfglxon0hrq"]
+
+[ext_resource type="Texture2D" uid="uid://dpaadikdxbm8q" path="res://treen.png" id="1_g0icf"]
+
+[node name="Node2D" type="Node2D" unique_id=389087564]
+
+[node name="Treen" type="Sprite2D" parent="." unique_id=1322069811]
+position = Vector2(332.39063, 351.54367)
+scale = Vector2(0.23307079, 0.23307075)
+texture = ExtResource("1_g0icf")
+
+[node name="Treen" type="Sprite2D" parent="Treen" unique_id=1160907881]
+position = Vector2(1894.1571, 228.91492)
+scale = Vector2(0.8139311, 0.813931)
+texture = ExtResource("1_g0icf")

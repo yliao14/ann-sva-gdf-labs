@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://3s3mjx5p0yf8"]
+
+[ext_resource type="PackedScene" uid="uid://0pfglxon0hrq" path="res://Tree scene.tscn" id="1_3hygc"]
+[ext_resource type="Texture2D" uid="uid://dpaadikdxbm8q" path="res://treen.png" id="2_ymjsc"]
+[ext_resource type="PackedScene" uid="uid://cd21cl6748mf5" path="res://Fox scene.tscn" id="3_yui23"]
+[ext_resource type="PackedScene" uid="uid://wxl8anyqoy2d" path="res://Giraffe scene.tscn" id="4_ymjsc"]
+[ext_resource type="PackedScene" uid="uid://fh00pphqcmnl" path="res://Rock scene.tscn" id="5_yui23"]
+
+[node name="Node2D" type="Node2D" unique_id=60051529]
+
+[node name="Node2D" parent="." unique_id=389087564 instance=ExtResource("1_3hygc")]
+position = Vector2(-128, 50)
+scale = Vector2(0.78, 0.78)
+
+[node name="Node2D2" parent="." unique_id=1910678090 instance=ExtResource("1_3hygc")]
+position = Vector2(443.99997, 90)
+scale = Vector2(0.72, 0.72)
+
+[node name="Node2D3" parent="." unique_id=1116945516 instance=ExtResource("1_3hygc")]
+position = Vector2(91.00003, 167)
+scale = Vector2(0.6, 0.6)
+
+[node name="Treen" type="Sprite2D" parent="." unique_id=363649904]
+position = Vector2(862.00006, 327)
+scale = Vector2(0.17975996, 0.17975998)
+texture = ExtResource("2_ymjsc")
+
+[node name="Fox" parent="." unique_id=1117890389 instance=ExtResource("3_yui23")]
+position = Vector2(232, 518)
+scale = Vector2(0.07418752, 0.07418752)
+
+[node name="Node2D4" parent="." unique_id=549364173 instance=ExtResource("4_ymjsc")]
+position = Vector2(463.00003, 183)
+scale = Vector2(0.65, 0.65)
+
+[node name="Node2D5" parent="." unique_id=1751798082 instance=ExtResource("5_yui23")]
+position = Vector2(927, 474)
+scale = Vector2(0.26, 0.26)
+
+[node name="Node2D6" parent="." unique_id=914663490 instance=ExtResource("5_yui23")]
+position = Vector2(82, 493)
+scale = Vector2(0.21, 0.21)
+
+[node name="Node2D7" parent="." unique_id=682245012 instance=ExtResource("5_yui23")]
+position = Vector2(392, 488)
+scale = Vector2(0.14, 0.14)

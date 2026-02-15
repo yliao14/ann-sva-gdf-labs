@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b37lov4kjxi6o"]
+
+[node name="ColorRect" type="ColorRect" unique_id=806144957]
+modulate = Color(0.30588236, 0.88235295, 0.03529412, 1)
+offset_right = 476.9091
+offset_bottom = 244.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1333366920]
+self_modulate = Color(1, 0.12156863, 1, 1)
+layout_mode = 0
+offset_left = 176.0
+offset_top = 245.0
+offset_right = 287.0
+offset_bottom = 444.0
