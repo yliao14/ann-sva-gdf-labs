@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://b4iofk4pm4i2i"]
+
+[ext_resource type="Texture2D" uid="uid://dmnjbec8fx0k5" path="res://kitten.png" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://y2dy3bkmuj8u" path="res://icon.svg" id="2_epypp"]
+[ext_resource type="PackedScene" uid="uid://b37lov4kjxi6o" path="res://tree.tscn" id="3_epypp"]
+
+[node name="Node2D" type="Node2D" unique_id=1504619592]
+position = Vector2(487, 511)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=866408020]
+
+[node name="Kitten" type="Sprite2D" parent="." unique_id=377755029]
+position = Vector2(-13.920013, -62)
+scale = Vector2(0.6228572, 0.62285715)
+texture = ExtResource("1_0e48y")
+
+[node name="Kitten" type="Sprite2D" parent="Kitten" unique_id=1199467703]
+position = Vector2(294.87177, -232.69234)
+scale = Vector2(1.5600001, 1.56)
+texture = ExtResource("1_0e48y")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1740889193]
+self_modulate = Color(0.6745098, 1, 0, 1)
+position = Vector2(-66.99999, -263)
+scale = Vector2(0.6757817, 0.6757817)
+texture = ExtResource("2_epypp")
+
+[node name="Control" type="Control" parent="." unique_id=1178218431]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 404.0
+offset_top = 319.0
+offset_right = 1122.0
+offset_bottom = 535.0
+
+[node name="ColorRect" parent="Control" unique_id=806144957 instance=ExtResource("3_epypp")]
+layout_mode = 0
+offset_left = -138.0
+offset_top = -1013.0
+offset_right = 338.90906
+offset_bottom = -769.0
+
+[node name="Control" type="Control" parent="Control" unique_id=547907173]
+anchors_preset = 0
+offset_left = 404.0
+offset_top = 319.0
+offset_right = 1122.0
+offset_bottom = 535.0
+
+[node name="ColorRect" parent="Control/Control" unique_id=1985515969 instance=ExtResource("3_epypp")]
+layout_mode = 0
+offset_left = -161.0
+offset_top = -941.0
+offset_right = 315.90906
+offset_bottom = -697.0
