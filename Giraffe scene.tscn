@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://wxl8anyqoy2d"]
+
+[ext_resource type="Texture2D" uid="uid://gyjll24fn6nn" path="res://Giraffe.png" id="1_rmoxe"]
+
+[node name="Node2D" type="Node2D" unique_id=549364173]
+
+[node name="Giraffe" type="Sprite2D" parent="." unique_id=2019698305]
+position = Vector2(244, 375)
+scale = Vector2(0.540625, 0.540625)
+texture = ExtResource("1_rmoxe")
+
+[node name="Giraffe" type="Sprite2D" parent="Giraffe" unique_id=785730686]
+position = Vector2(688.55597, -15.839413)
+scale = Vector2(1.0161823, 1.0161823)
+texture = ExtResource("1_rmoxe")
+
+[node name="Giraffe" type="Sprite2D" parent="Giraffe/Giraffe" unique_id=525301896]
+position = Vector2(-271.6741, 117.521454)
+scale = Vector2(0.77202797, 0.77202797)
+texture = ExtResource("1_rmoxe")

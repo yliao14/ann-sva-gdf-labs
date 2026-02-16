@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cd21cl6748mf5"]
+
+[ext_resource type="Texture2D" uid="uid://br46aljk7ohks" path="res://Fox.png" id="1_ji4q4"]
+
+[node name="Fox" type="Sprite2D" unique_id=1117890389]
+position = Vector2(369, 387)
+scale = Vector2(0.30175003, 0.30175003)
+texture = ExtResource("1_ji4q4")
+
+[node name="Fox" type="Sprite2D" parent="." unique_id=1023326992]
+position = Vector2(1212.9246, 192.2121)
+scale = Vector2(0.76255065, 0.76255065)
+texture = ExtResource("1_ji4q4")
