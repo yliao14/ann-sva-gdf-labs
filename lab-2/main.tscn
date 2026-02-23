@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://2446d6lqhdmx"]
+
+[ext_resource type="Script" uid="uid://c04sq74bml4g8" path="res://player_controller.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://2k1frthli8d1" path="res://2d player.png" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://dnvo2yrubl62j" path="res://Floor.png" id="2_h2yge"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1bvp3"]
+radius = 63.0
+height = 1146.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lquwl"]
+radius = 96.0
+height = 242.0
+
+[node name="Main" type="Node2D" unique_id=173550729]
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=836087187]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=1960848312]
+position = Vector2(577, 587)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_1bvp3")
+
+[node name="Floor" type="Sprite2D" parent="Floor" unique_id=596344508]
+modulate = Color(0.38125673, 0.29303744, 0.1974665, 1)
+position = Vector2(575.49994, 437.5)
+scale = Vector2(0.7673333, 0.42142138)
+texture = ExtResource("2_h2yge")
+
+[node name="PlayerController" type="CharacterBody2D" parent="." unique_id=789057705]
+script = ExtResource("1_ig7tw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerController" unique_id=699051540]
+position = Vector2(203, 406)
+shape = SubResource("CapsuleShape2D_lquwl")
+
+[node name="2dPlayer" type="Sprite2D" parent="PlayerController" unique_id=859359953]
+position = Vector2(216, 403)
+scale = Vector2(0.18161094, 0.18138301)
+texture = ExtResource("2_0xm2m")
