@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cbx36of8hepwk"]
+
+[ext_resource type="Texture2D" uid="uid://d1smswbm1opx3" path="res://icon.svg" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://eojeqsf6hqeh" path="res://icon.gd" id="2_0xm2m"]
+
+[node name="Node2D" type="Node2D" unique_id=737704362]
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=732517005]
+position = Vector2(144, 138)
+texture = ExtResource("1_ig7tw")
+script = ExtResource("2_0xm2m")
+
+[node name="Camera2D" type="Camera2D" parent="Icon" unique_id=1934333453]
+position = Vector2(432, 186)
