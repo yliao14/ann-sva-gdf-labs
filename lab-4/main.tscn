@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://c70l3dcopch2s"]
+
+[ext_resource type="Script" uid="uid://cps62051gqxyg" path="res://player.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://df8yjbuswmcew" path="res://3d assets/fbx/people_unity/queen.fbx" id="1_ig7tw"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0xm2m"]
+radius = 0.97558594
+height = 4.8239136
+
+[node name="Main" type="Node3D" unique_id=1783242287]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1347365510]
+transform = Transform3D(0.7224583, 0.68486047, 0.0949759, -0.47755033, 0.39492556, 0.78484386, 0.5000001, -0.61237264, 0.61237246, -109.50073, 68.15259, 49.68643)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=453048284]
+transform = Transform3D(0.8929899, 0.21924315, -0.39306688, -0.011555839, 0.8842136, 0.46693975, 0.44992843, -0.41243023, 0.7921274, -12.127808, 21.440308, 36.729675)
+
+[node name="Level" type="Node3D" parent="." unique_id=487351229]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Level" unique_id=318212995]
+transform = Transform3D(0.99513507, 0, 0.09852083, 0, 1, 0, -0.09852083, 0, 0.99513507, 0.8479245, 0.16977084, 0.92548776)
+use_collision = true
+size = Vector3(30, 1, 30)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Level" unique_id=709840976]
+transform = Transform3D(1, 0, 0, 0, 1.0237788, 0, 0, 0, 1.0237788, 6.807494, 5.8161144, 4.316725)
+use_collision = true
+radius = 5.0
+height = 10.0
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Level" unique_id=56564336]
+transform = Transform3D(-0.053224836, 0, 0.99858254, 0, 1, 0, -0.99858254, 0, -0.053224836, -5.393429, 5.481017, 4.8885107)
+use_collision = true
+radius = 5.0
+radial_segments = 25
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=69351625]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0251274, -0.3134346, 20.49037)
+script = ExtResource("1_0xm2m")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=2085621742]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6166923, 2.7296007, -8.424533)
+shape = SubResource("CapsuleShape3D_0xm2m")
+
+[node name="queen" parent="Player" unique_id=275708029 instance=ExtResource("1_ig7tw")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.471, 1, -8.293)

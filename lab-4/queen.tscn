@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://s0fwdnlew7ds"]
+
+[ext_resource type="PackedScene" uid="uid://df8yjbuswmcew" path="res://3d assets/fbx/people_unity/queen.fbx" id="1_rx2bg"]
+
+[node name="queen" unique_id=275708029 instance=ExtResource("1_rx2bg")]
